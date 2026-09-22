@@ -12,7 +12,7 @@ export default function Header() {
 
         {/* SEARCH */}
         <div className="flex items-center gap-4 bg-[#1f1f1f] rounded-[15px] 
-            w-[500px] px-5 py-2">
+            w-125 px-5 py-2">
             <FaSearch className="text-[#ffffff]" />
             <input type="text" placeholder="Search..."
             className="bg-[#1f1f1f] outline-none text-[#f1f1f1]"
