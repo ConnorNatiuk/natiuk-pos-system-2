@@ -1,10 +1,10 @@
 import { BsCashCoin } from "react-icons/bs";
-import { Greetings, MiniCard, RecentOrders } from "../components/home";
+import { Greetings, MiniCard, PopularDishes, RecentOrders } from "../components/home";
 import { GrInProgress } from "react-icons/gr";
 
 export default function Home() {
   return (
-    <div className="bg-[#1a1a1a] h-[calc(100vh-5rem)] overflow-hidden flex gap-3">
+    <div className="bg-[#1a1a1a] h-[calc(100vh-5rem)] overflow-hidden flex">
         {/* LEFT DIV */}
         <div className="flex-3 bg-[#1f1f1f]">
 
@@ -18,7 +18,7 @@ export default function Home() {
 
         {/* RIGHT DIV */}
         <div className="flex-2 bg-[#1f1f1f]">
-
+          <PopularDishes />
         </div>
     </div>
   )

@@ -28,7 +28,12 @@ export default function RecentOrders() {
         </div>
 
         {/* ORDER LIST */}
-        <div className='mt-4 px-8'>
+        <div className='mt-4 px-8 overflow-y-scroll scrollbar-none h-75'>
+            <OrderList />
+            <OrderList />
+            <OrderList />
+            <OrderList />
+            <OrderList />
             <OrderList />
         </div>
       </div>
