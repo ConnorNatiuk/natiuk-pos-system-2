@@ -16,7 +16,7 @@ export default function MiniCard({ title, icon, number, footerNum }: MiniCardPro
         p-3 rounded-lg text-[#f5f5f5] text-2xl`}>{icon}</button>
       </div>
       <div>
-        <h1 className='text-[#f5f5f5] text-4xl font-bold mt-5'>{number}</h1>
+        <h1 className='text-[#f5f5f5] text-4xl font-bold mt-5'>{title === "Total Earnings" ? `$${number}` : number}</h1>
         <h3 className='text-[#f5f5f5] text-lg mt-2'><span className='text-[#02ca3a]'>{footerNum}%</span> than yesterday</h3>
       </div>
     </div>
