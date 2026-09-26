@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BottomNav } from "../components/shared";
+import { BackButton, BottomNav } from "../components/shared";
 import { OrderCard } from "../components/orders";
 
 export default function Orders() {
@@ -8,7 +8,10 @@ export default function Orders() {
   return (
     <section className="bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden">
       <div className="flex items-center justify-between px-8 py-4">
-        <h1 className="text-[#f5f5f5] text-3xl font-semibold tracking-wider">Orders</h1>
+        <div className="flex items-center gap-3">
+          <BackButton />
+          <h1 className="text-[#f5f5f5] text-3xl font-semibold tracking-wider">Orders</h1>
+        </div>
         <div className="flex items-center gap-8">
           <button onClick={() => setActiveButton("all")} 
           className={activeButton === "all" 
@@ -37,7 +40,18 @@ export default function Orders() {
         </div>
       </div>
 
-      <div className="px-10 py-8">
+      <div className="flex flex-wrap h-[calc(100vh-5rem)] gap-6 justify-center overflow-y-scroll scrollbar-none px-8 py-10">
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
         <OrderCard />
       </div>
 

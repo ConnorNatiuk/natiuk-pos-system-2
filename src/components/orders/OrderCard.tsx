@@ -12,7 +12,7 @@ export default function OrderCard() {
                 </div>
             
                 <div className="flex flex-col items-end gap-2">
-                    <p className="text-green-700"><FaCheckDouble className='inline mr-2' />Ready</p>
+                    <p className="text-green-700 bg-[#2e4a40] px-2 py-1 rounded-[5px]"><FaCheckDouble className='inline mr-2' />Ready</p>
                     <p className="text-[#ababab] text-sm"><FaCircle className='inline mr-2 text-green-600'/>Ready to serve</p>
                 </div>
             </div>
