@@ -12,6 +12,9 @@ export default function Orders() {
           <BackButton />
           <h1 className="text-[#f5f5f5] text-3xl font-semibold tracking-wider">Orders</h1>
         </div>
+
+        {/* OPTION LIST */}
+
         <div className="flex items-center gap-8">
           <button onClick={() => setActiveButton("all")} 
           className={activeButton === "all" 
@@ -40,14 +43,7 @@ export default function Orders() {
         </div>
       </div>
 
-      <div className="flex flex-wrap h-[calc(100vh-5rem)] gap-6 justify-center overflow-y-scroll scrollbar-none px-8 py-10">
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
+      <div className="flex content-start flex-wrap h-[calc(100vh-5rem)] gap-6 justify-center overflow-y-scroll scrollbar-none px-8 py-10">
         <OrderCard />
         <OrderCard />
         <OrderCard />
