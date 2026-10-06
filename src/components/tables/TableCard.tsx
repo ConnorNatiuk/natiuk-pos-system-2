@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { getRandomBG } from "../../utils/getRandomBG";
 
 type TableCardProps = {
@@ -8,8 +9,18 @@ type TableCardProps = {
 };
 
 export default function TableCard({id, name, status, initial}: TableCardProps) {
+
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        if(status == "Booked") {
+            return;
+        };
+        navigate("/menu")
+    }
+    
   return (
-    <div key={id} className="w-75 max-h-50 bg-[#262626] hover:bg-[#3a3a3a]
+    <div onClick={handleClick} key={id} className="w-75 max-h-50 bg-[#262626] hover:bg-[#3a3a3a]
     p-4 rounded-lg cursor-pointer">
         <div className="flex items-center justify-between px-2">
             <h1 className="text-[#f5f5f5] text-xl font-semibold">

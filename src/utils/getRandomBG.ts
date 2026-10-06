@@ -24,3 +24,19 @@ export const getRandomBG = () => {
 
     return colors[Math.floor(Math.random() * colors.length)];
 }
+
+export const getBgColor = () => {
+    const bgArray = [
+        "bg-[#E57373]",
+        "bg-[#F06292]",
+        "bg-[#BA68C8]",
+        "bg-[#9575CD]",
+        "bg-[#7986CB]",
+        "bg-[#64B5F6]",
+        "bg-[#4FC3F7]",
+        "bg-[#4DD0E1]",
+    ]
+    const randomBg = Math.floor(Math.random() * bgArray.length);
+    const color = bgArray[randomBg]
+    return color;
+}
